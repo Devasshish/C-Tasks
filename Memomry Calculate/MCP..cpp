@@ -34,7 +34,7 @@ vector<StudentInfo<int> > studentList;
 
 // ---------------- Operations ----------------
 void insertStudent(int rollNo, const string& name) {
-    studentList.emplace_back(rollNo, name);
+    studentList.push_back(rollNo, name);
     cout << "? Student inserted successfully.\n";
 }
 
