@@ -34,7 +34,7 @@ vector<StudentInfo<int> > studentList;
 
 // ---------------- Operations ----------------
 void insertStudent(int rollNo, const string& name) {
-    studentList.push_back(rollNo, name);
+	studentList.push_back(StudentInfo<int>(rollNo, name));
     cout << "? Student inserted successfully.\n";
 }
 
@@ -128,4 +128,3 @@ int main() {
 
     return 0;
 }
-
